@@ -27,9 +27,9 @@ function App() {
 
     // Validate the runway value
     if (value.length === 0) {
-      setRunwayError('Runway number is required for x-wind calculation');
+      setRunwayError(' Runway number is required for x-wind calculation');
     } else if (!runwayRegex.test(value)) {
-      setRunwayError('Invalid runway number');
+      setRunwayError(' Invalid runway number');
     } else {
       setRunwayError('');
     }
