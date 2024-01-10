@@ -1,0 +1,82 @@
+.app-container {
+  background: #E8F0FD;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  /* For screens larger than or equal to 768px (e.g., tablets and desktops) */
+  .app-container {
+    max-width: 50%;
+  }
+}
+
+.app-title {
+  color: #003E7D;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.input-label {
+  color: #003E7D;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.text-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.metar-container {
+  margin-top: 30px;
+}
+
+.metar-heading {
+  color: #003E7D;
+  font-size: 20px;
+}
+
+.metar-detail {
+  position: relative;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.metar-detail img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.metar-detail-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.no-metar-message {
+  color: #003E7D;
+  font-size: 16px;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #003E7D;
+}
