@@ -159,7 +159,7 @@ function App() {
           <div className="metar-detail">
             <p className="metar-detail-title">Visibility:</p>
             <p>{metar.visibility.miles} Statute Miles</p>
-            <img src="visibility-symbol.png" alt="Visibility" />
+            <img src="imgs/visibility-symbol.png" alt="Visibility" />
           </div>
           <div className="metar-detail">
             <p className="metar-detail-title">Cloud Layers:</p>
@@ -168,19 +168,19 @@ function App() {
               <p>No cloud layers found.</p>
             }
             {/* Placeholder symbol image */}
-            <img src="cloud-layers-symbol.png" alt="Cloud Layers" />
+            <img src="imgs/cloud-layers-symbol.jpg" alt="Cloud Layers" />
           </div>
           <div className="metar-detail">
             <p className="metar-detail-title">Temperature / Dew Point:</p>
             <p>{metar.temperature.celsius}°C / {metar.dewpoint.celsius}°C</p>
             {/* Placeholder symbol image */}
-            <img src="temp-dew-symbol.png" alt="Temperature / Dew Point" />
+            <img src="imgs/temp-dew-symbol.png" alt="Temperature / Dew Point" />
           </div>
           <div className="metar-detail">
             <p className="metar-detail-title">Altimeter Setting:</p>
             <p>{metar.barometer.hg}" Hg</p>
             {/* Placeholder symbol image */}
-            <img src="altimeter-symbol.png" alt="Altimeter Setting" />
+            <img src="imgs/altimeter-symbol.png" alt="Altimeter Setting" />
           </div>
           <div className="metar-detail">
             <p className="metar-detail-title">Conditions:</p>
@@ -188,13 +188,13 @@ function App() {
               metar.conditions.map((item) => <p>{item.code} ({item.text})</p>) :
               <p>No special conditions.</p>
             }
-            <img src="conditions.png" alt="Conditions" />
+            <img src="imgs/conditions.png" alt="Conditions" />
           </div>
           <div className="metar-detail">
             <p className="metar-detail-title">Sea Level Pressure:</p>
             <p>{metar.barometer.mb} mb</p>
             {/* Placeholder symbol image */}
-            <img src="sea-level-pressure-symbol.png" alt="Sea Level Pressure" />
+            <img src="imgs/sea-level-pressure-symbol.png" alt="Sea Level Pressure" />
           </div>
         </div>
       ) : (
